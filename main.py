@@ -120,7 +120,7 @@ while True:
             print("Thank you.")
             break
 
-        elif petsDict.get(int(pet)) != None:
+        elif int(pet) in petsDict:
             tempPet = petsDict[int(pet)]
             print(f"You have chosen {tempPet.getPetName()}, the {tempPet.getAnimalType()}.  {tempPet.getPetName()} is {tempPet.getPetAge()} years old.  {tempPet.getPetName()}'s owner is {tempPet.getOwnerName()}.")
             print()
