@@ -18,7 +18,6 @@ petsDict = {}
 def listChoices():
     """
      Print a nice header
-     :rtype: None
     """
     print("*".center(30, "*"))
     print(" Pet Chooser ".center(30, "*"))
@@ -116,7 +115,7 @@ while True:
     try:
         pet = input("Please choose from the list above: ")
 
-        if pet == "Q" or pet == "q":
+        if pet.upper() == "Q":
             print("Thank you.")
             break
 
